@@ -98,7 +98,6 @@ color: #42a4f5;
 }
 
 .menu .menu-items {
-	min-height: 600px;
 	max-height: 600px;
 	overflow-y: hidden;
 }
