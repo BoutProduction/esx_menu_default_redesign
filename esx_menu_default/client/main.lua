@@ -48,6 +48,7 @@ Citizen.CreateThread(function()
 		
 		if menu.submit ~= nil then
 			menu.submit(data, menu)
+			PlaySoundFrontend(-1, "SELECT", "HUD_FRONTEND_DEFAULT_SOUNDSET", false)					
 		end
 
 		cb('OK')
@@ -58,6 +59,7 @@ Citizen.CreateThread(function()
 		
 		if menu.cancel ~= nil then
 			menu.cancel(data, menu)
+			PlaySoundFrontend(-1, "CANCEL", "HUD_FRONTEND_DEFAULT_SOUNDSET", false)					
 		end
 
 		cb('OK')
@@ -71,6 +73,7 @@ Citizen.CreateThread(function()
 
 			if data.elements[i].selected then
 				menu.setElement(i, 'selected', true)
+				PlaySoundFrontend(-1, "NAV_UP_DOWN", "HUD_FRONTEND_DEFAULT_SOUNDSET", false)						
 			else
 				menu.setElement(i, 'selected', false)
 			end
